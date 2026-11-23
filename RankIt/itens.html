@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adicionar Itens - RankIt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                🏆 <span>RankIt</span>
+            </div>
+
+            <nav class="menu">
+
+                <button class="menu-button" onclick="window.location.href='index.html'">
+                    🏠
+                    <span>Início</span>
+                </button>
+
+                <button class="menu-button">
+                    📋
+                    <span>Meus Rankings</span>
+                </button>
+
+                <button class="menu-button">
+                    ⚙️
+                    <span>Configurações</span>
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Sua opinião</p>
+                <p>importa.</p>
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+        <main class="content">
+
+            <section class="items-page">
+
+                <h1>Adicionar itens</h1>
+
+                <p class="page-description">
+                    Adicione os itens que você deseja comparar.
+                </p>
+
+
+                <!-- FORMULÁRIO -->
+
+                <div class="add-item-box">
+
+                    <div class="form-group">
+
+                        <label for="nomeItem">
+                            Nome do item
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nomeItem"
+                            placeholder="Ex: Stardew Valley"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="imagemItem">
+                            Imagem (opcional)
+                        </label>
+
+                        <input
+                            type="file"
+                            id="imagemItem"
+                            accept="image/*"
+                        >
+
+                    </div>
+
+
+                    <button
+                        class="primary-button"
+                        id="btnAdicionar">
+                        ＋ Adicionar item
+                    </button>
+
+                </div>
+
+
+                <!-- LISTA DE ITENS -->
+
+                <div class="items-list">
+
+                    <h2>Itens adicionados</h2>
+
+                    <div id="listaItens">
+
+                        <p class="empty-message" id="mensagemVazia">
+                            Nenhum item adicionado ainda.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AÇÕES -->
+
+                <div class="form-actions">
+
+                    <button
+                        class="secondary-button"
+                        onclick="window.location.href='criar-ranking.html'">
+                        ← Voltar
+                    </button>
+
+                    <button
+                        class="primary-button"
+                        id="btnComecar">
+                        Começar ranking →
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/itens.js"></script>
+
+</body>
+
+</html>

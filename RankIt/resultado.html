@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado - RankIt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                🏆 RankIt
+            </div>
+
+            <nav class="menu">
+
+                <button class="menu-button" onclick="window.location.href='index.html'">
+                    🏠 Início
+                </button>
+
+                <button class="menu-button">
+                    📋 Meus Rankings
+                </button>
+
+                <button class="menu-button">
+                    ⚙️ Configurações
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                RankIt © 2026
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+        <main class="content">
+
+            <section class="result-page">
+
+                <div class="result-header">
+
+                    <div class="trophy">
+                        🏆
+                    </div>
+
+                    <h1>Seu Ranking</h1>
+
+                    <p>
+                        Veja como seus itens ficaram classificados.
+                    </p>
+
+                </div>
+
+
+                <!-- RANKING -->
+                <div id="resultadoLista" class="result-list">
+                    <!-- O JavaScript vai colocar os itens aqui -->
+                </div>
+
+
+                <!-- BOTÕES -->
+                <div class="result-actions">
+
+                    <button
+                        class="secondary-button"
+                        onclick="window.location.href='itens.html'">
+                        ← Voltar aos itens
+                    </button>
+
+                    <button
+                        class="primary-button"
+                        onclick="window.location.href='index.html'">
+                        🏠 Voltar ao início
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/resultado.js"></script>
+
+</body>
+
+</html>

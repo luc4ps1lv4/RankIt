@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar Ranking - RankIt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                🏆 <span>RankIt</span>
+            </div>
+
+            <nav class="menu">
+
+                <button class="menu-button" onclick="window.location.href='index.html'">
+                    🏠
+                    <span>Início</span>
+                </button>
+
+                <button class="menu-button">
+                    📋
+                    <span>Meus Rankings</span>
+                </button>
+
+                <button class="menu-button">
+                    ⚙️
+                    <span>Configurações</span>
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Sua opinião</p>
+                <p>importa.</p>
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="content">
+
+            <section class="create-ranking">
+
+                <h1>Criar novo ranking</h1>
+
+                <p class="page-description">
+                    Configure seu ranking antes de começar as comparações.
+                </p>
+
+
+                <!-- NOME DO RANKING -->
+
+                <div class="form-group">
+
+                    <label for="nomeRanking">
+                        Nome do ranking
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeRanking"
+                        placeholder="Ex: Meus jogos favoritos"
+                    >
+
+                </div>
+
+
+                <!-- CATEGORIA -->
+
+                <div class="form-group">
+
+                    <label for="categoria">
+                        Categoria
+                    </label>
+
+                    <select id="categoria">
+
+                        <option value="">
+                            Selecione uma categoria
+                        </option>
+
+                        <option value="jogos">
+                            🎮 Jogos
+                        </option>
+
+                        <option value="filmes">
+                            🎬 Filmes
+                        </option>
+
+                        <option value="series">
+                            📺 Séries
+                        </option>
+
+                        <option value="musicas">
+                            🎵 Músicas
+                        </option>
+
+                        <option value="livros">
+                            📚 Livros
+                        </option>
+
+                        <option value="outros">
+                            ⭐ Outros
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TEMA -->
+
+                <div class="form-group">
+
+                    <label>
+                        Tema
+                    </label>
+
+                    <div class="themes">
+
+                        <button class="theme-button selected">
+                            ✨ Padrão
+                        </button>
+
+                        <button class="theme-button">
+                            👾 Pixel Art
+                        </button>
+
+                        <button class="theme-button">
+                            🌌 Neon
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <div class="form-actions">
+
+                    <button
+                        class="secondary-button"
+                        onclick="window.location.href='index.html'">
+                        ← Voltar
+                    </button>
+
+                    <button
+                        class="primary-button"
+                        id="btnContinuar">
+                        Continuar →
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/criar-ranking.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Rankings | RankIt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="rankings-page">
+
+        <header class="rankings-header">
+
+            <div>
+                <span class="rankings-label">SUA COLEÇÃO</span>
+
+                <h1>Meus Rankings</h1>
+
+                <p>
+                    Organize seus favoritos e descubra suas
+                    próprias classificações.
+                </p>
+            </div>
+
+            <button
+                class="primary-button"
+                onclick="window.location.href='criar-ranking.html'"
+            >
+                + Novo Ranking
+            </button>
+
+        </header>
+
+        <section id="listaRankings" class="rankings-grid">
+
+            <p>Carregando rankings...</p>
+
+        </section>
+
+        <button
+            class="secondary-button"
+            onclick="window.location.href='index.html'"
+        >
+            Voltar ao início
+        </button>
+
+    </main>
+
+    <script src="js/rankings.js"></script>
+
+</body>
+
+</html>
